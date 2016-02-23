@@ -1,0 +1,126 @@
+/* ==================== GLOBAL RESET ==================== */
+
+html {margin:0; padding:0;}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, select, p, blockquote, th, td {margin: 0; padding: 0;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+fieldset, img {border: 0;}
+
+address,button, caption, cite, code, dfn, em, input, optgroup, option, select, strong, textarea, th, var {font:inherit;}
+
+del, ins {text-decoration: none;}
+
+li {list-style: none;}
+
+caption, th {text-align: left;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
+
+q:before, q:after {content: '';}
+
+abbr, acronym {border: 0; font-variant: normal;}
+
+sup {vertical-align: baseline;}
+
+sub {vertical-align: baseline;}
+
+/*because legend doesn't inherit in IE */
+legend {color: #000;}
+
+/* ==================== UNIVERSAL ==================== */
+
+
+body {
+	background: #111;
+	color: #f5f4eb;
+	font-family: 'Abril Fatface', cursive;
+	height: 100%;
+	position: relative;
+}
+
+h1 {
+	font-size: 40px;
+	font-size: 3.3vw;
+	height: auto;
+	line-height: 145%;
+	left: 50%;
+	letter-spacing: 1.5px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	width: 50%;
+}
+
+a {
+	color: #f5f4eb;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+}
+
+/*a:visited {
+	color: black;
+}*/
+
+a:hover {
+	color: purple;
+}
+
+.red:hover, .red:visited {
+	color: red;
+}
+
+.purple:hover, .purple:visited {
+	color: purple;
+}
+
+.orange:hover, .orange:visited {
+	color: orange;
+}
+
+.green:hover, .green:visited {
+	color: green;
+}
+
+.blue:hover, .blue:visited {
+	color: blue;
+}
+
+.fushchia:hover, .fushchia:visited {
+	color: fuchsia ;
+}
+
+.yellow:hover, .yellow:visited {
+	color: yellow;
+}
+
+.navy:hover, .navy:visited, .clicked {
+	color: mediumslateblue;
+}
+
+.evolve {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 32px;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 666px) {
+	h1 {
+		font-size: 25px;
+		font-size: 8vw;
+		left: auto;
+		padding: 5%;
+		position: relative;
+		top: auto;
+		transform: translateY(0%) translateX(0%);
+		-webkit-transform: translateY(0%) translateX(0%);
+		width: auto;
+	}
+}
