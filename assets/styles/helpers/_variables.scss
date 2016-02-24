@@ -17,33 +17,3 @@ $dust: #99857f;
 $dusk: #565352;
 $slate: #262b2d;
 $gold: #c39d4a;
-
-
-// MIXINS
-
-// rem font sizing with backup px
-@mixin font-size($sizevalue: 1.6) {
-  font-size: ($sizevalue * 10) + px;
-  font-size: $sizevalue + rem;
-}
-
-// cross browser opacity
-@mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
-}
-
-// PLACEHOLDERS
-
-%visuallyhidden {
-  clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-

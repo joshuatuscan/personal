@@ -6,9 +6,6 @@
   font-style: normal;
 }
 
-
-
-
 // $utopia: "UtopiaReg", Georgia, serif;
 // $utopia-display: "UtopiaDisp", Georgia, serif;
 // $utopia-it: "UtopiaItalic", Georgia, serif;
@@ -18,9 +15,12 @@
 $main-font: Helvetica;
 
 
+html {
+  font-size: 62.5%;
+}
 
 body {
-  @include font-size(1.2);
+  @include font-size(1.4);
   color: $slate;
   font-family: $main-font;
   font-style: normal;
