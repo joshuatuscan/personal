@@ -1,8 +1,8 @@
 // styles for miles
 
-html, 
+html,
 body {
-  overflow-x: hidden;
+  // nothing for now
 }
 
 html {
@@ -13,96 +13,3 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-a {
-  @include transition(all .2s ease-in-out);
-  color: $dust;
-  text-decoration: none;
-
-  &:hover {
-    color: rgba($dust, .8);
-  }
-}
-
-.site-title {
-  @include font-size(3.7);
-  font-family: $utopia;
-  font-style: normal;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.6em;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  a {
-    color: $black;
-  }
-}
-
-.content {
-  padding: 120px 0 50px;
-
-  @media screen and (max-width: 970px) {
-    padding: 70px 0 50px;
-  }
-}
-
-.footer {
-  padding: 20px 0;
-}
-
-.center {
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  width: 70%;
-
-  @media screen and (max-width: 970px) {
-    width: 85%;
-  }
-}
-
-.row {
-  @include clearfix;
-}
-
-p {
-  line-height: 120%;
-}
-
-.cta {
-  @include font-size(1);
-  @include transition(all .2s ease-in-out !important);
-  background-color: $slate;
-  border-radius: 2px;
-  color: $white;
-  display: inline-block;
-  font-family: $gotham;
-  letter-spacing: 3px;
-  padding: 13px 20px 12px;
-  text-align: center;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: $gold;
-    color: $white;
-  }
-}
-
-.sqs-layout > .sqs-row {
-  margin: 0 !important;
-}
-
-.sqs-layout:not(.sqs-editing)>.sqs-row:first-child>[class*=sqs-col]:first-child>.sqs-block:last-child, .sqs-layout:not(.sqs-editing) .sqs-block+.sqs-row .sqs-block:not(.float):last-child {
-  padding: 0 !important;
-}
-
-[class*=sqs-col] {
-  float: none !important;
-}
-
-[class*=sqs-col] .sqs-block {
-  padding-left: 0;
-  padding-right: 0;
-}
-

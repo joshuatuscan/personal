@@ -1,51 +1,21 @@
 @font-face {
   font-family: 'Apercu';
-  src: url('/assets/fonts/ApercuPro.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/ApercuPro.otf') format('opentype'), 
+  src: url('/assets/fonts/ApercuPro.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/ApercuPro.otf') format('opentype'),
   url('/assets/fonts/ApercuPro.woff') format('woff'), url('/assets/fonts/ApercuPro.ttf')  format('truetype'), url('/assets/fonts/ApercuPro.svg#ApercuPro') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'UtopiaReg';
-  src: url('/assets/fonts/UtopiaStd-Regular.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/UtopiaStd-Regular.otf')  format('opentype'),
-       url('/assets/fonts/UtopiaStd-Regular.woff') format('woff'), url('/assets/fonts/UtopiaStd-Regular.ttf')  format('truetype'), url('/assets/fonts/UtopiaStd-Regular.svg#UtopiaStd-Regular') format('svg');
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'UtopiaDisp';
-  src: url('/assets/fonts/UtopiaStd-Disp.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/UtopiaStd-Disp.otf')  format('opentype'),
-       url('/assets/fonts/UtopiaStd-Disp.woff') format('woff'), url('/assets/fonts/UtopiaStd-Disp.ttf')  format('truetype'), url('/assets/fonts/UtopiaStd-Disp.svg#UtopiaStd-Disp') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'UtopiaItalic';
-  src: url('/assets/fonts/UtopiaStd-Italic.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/UtopiaStd-Italic.otf')  format('opentype'),
-       url('/assets/fonts/UtopiaStd-Italic.woff') format('woff'), url('/assets/fonts/UtopiaStd-Italic.ttf')  format('truetype'), url('/assets/fonts/UtopiaStd-Italic.svg#UtopiaStd-Italic') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GothamBold';
-  src: url('/assets/fonts/GothamSSm-Bold.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/GothamSSm-Bold.otf')  format('opentype'),
-       url('/assets/fonts/GothamSSm-Bold.woff') format('woff'), url('/assets/fonts/GothamSSm-Bold.ttf')  format('truetype'), url('/assets/fonts/GothamSSm-Bold.svg#GothamSSm-Bold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 
 
-$utopia: "UtopiaReg", Georgia, serif;
-$utopia-display: "UtopiaDisp", Georgia, serif;
-$utopia-it: "UtopiaItalic", Georgia, serif;
-$apercu: "Apercu", Helvetica, sans-serif;
-$gotham: "GothamBold", Helvetica, sans-serif;
 
-$main-font: $utopia; 
+// $utopia: "UtopiaReg", Georgia, serif;
+// $utopia-display: "UtopiaDisp", Georgia, serif;
+// $utopia-it: "UtopiaItalic", Georgia, serif;
+// $apercu: "Apercu", Helvetica, sans-serif;
+// $gotham: "GothamBold", Helvetica, sans-serif;
+
+$main-font: Helvetica;
 
 
 
@@ -56,11 +26,11 @@ body {
   font-style: normal;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   font-weight: normal;
   line-height: 110%;
