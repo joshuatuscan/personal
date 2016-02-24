@@ -1,61 +1,68 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>temp</title>
+<!DOCTYPE html style="height: 100%;">
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+<head>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+	<title>Joshua Tuscan. Seattle, WA. Creative Developer.</title>
+	<meta charset="utf-8">
+	<meta name="msvalidate.01" content="6360CA796B05CA1CFD403CC2B0E0463C" />
+	<meta name="verify-v1" content="qkWXa+wDQkIrVlQCLSDbCxd3xoy/Rq3GepRkvooe1wU=" />
+	<meta name="verify-v1" content="kPMcNVBQ2Zdtof+5O56QvbhkiElnkraxj5c0LALCAmc=" />
+	<meta name="author" content="Joshua Tuscan" />
+	<meta name="Copyright" content="Copyright (c) 2004-2015 Joshua Tuscan" />
+	<meta name="description" content="The personal site of Joshua Tuscan, Creative Developer." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+	<meta property="og:title" content="Joshua Tuscan. Seattle, WA. Creative Developer." />
+	<meta property="og:description" content="The personal site of Joshua Tuscan, Creative Developer." />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Joshua Tuscan"/>
+	<meta property="fb:admins" content="501332605" />
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li>HTML5 Boilerplate</li>
-        <li>Sass</li>
-        <li>Modernizr</li>
-        <li>jQuery</li>
-      </ul>
-    </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="openid.server" href="http://openid.claimid.com/server" />
+	<link rel="openid.delegate" href="http://openid.claimid.com/joshuatuscan" />
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+	<!-- stylesheets -->
+	<!-- <link rel="stylesheet" media="all" href="css/global.css"> -->
+	<link rel="stylesheet" media="all" href="styles/splash.css">
+
+	<!-- quick load scripts go here, rest at the bottom -->
+	<script src="scripts/modernizr.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>
+		<a class="red" href="https://twitter.com/joshuatuscan" target="_blank">Joshua Tuscan</a> is a <span class="evolve">man</span> of <a class="purple" href="https://instagram.com/joshuatuscan/" target="_blank">Seattle, Washington</a>. He is a <a class="blue" href="http://www.linkedin.com/in/joshuatuscan" target="_blank">partner</a> at <a class="orange" href="http://bff.co">Friends</a> and is <a class="green" href="https://github.com/joshuatuscan" target="_blank">Head of Technology</a>. He's got some <a class="fushchia" href="https://instagram.com/explore/tags/dadvibes/" target="_blank">#dadvibes</a>. He still tries to have fun. He likes to <a class="yellow" href="http://smashrun.com/joshuatuscan/">run</a>. He likes to have <a class="navy" href="mailto:hello@joshuatuscan.com?subject=I like to have fun also!">fun</a> and run. 
+	</h1>
+	
+	
+	<!--scripts go here -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="scripts/events.js"></script> -->
+	<script>
+	$('.evolve').hover(function(){
+		var me = $(this);
+		me.html('child');
+	}, function() {
+		var me = $(this);
+		me.html('man')
+	});
+
+	$('.navy').click(function() {
+		$(this).addClass('clicked');
+	});
+	</script>
+
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	var pageTracker = _gat._getTracker("UA-167522-1");
+	pageTracker._trackPageview();
+	</script>
+</body>
 </html>
