@@ -1,0 +1,112 @@
+.site-footer {
+  @include clearfix;
+  background-color: $slate;
+  color: $off-white;
+  padding: 40px 0;
+
+  .map-contain {
+    display: none;
+    margin-bottom: 80px;
+
+    .tiz-map {
+      text-align: center;
+
+      img {
+        width: 35%;
+      }
+    }
+  }
+
+  a {
+    color: $off-white;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  .footer-block {
+    display: inline-block;
+    padding-right: 80px;
+    text-align: left;
+    vertical-align: top;
+    width: auto;
+
+    @media screen and (min-width: 970px) and (max-width: 1090px) {
+      padding-right: 50px;
+    }
+
+    @media screen and (max-width: 905px) {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    div {
+      padding: 0 !important;
+      width: auto;
+    }
+
+    h2 {
+      font-family: $gotham;
+      font-size: 10px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-family: $utopia;
+      font-size: 12px;
+      line-height: 175%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.home .site-footer {
+  padding: 70px 0;
+
+  .map-contain {
+    display: block;
+  }
+
+  .footer-block {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 0;
+    text-align: center;
+    width: 33.1%;
+
+    &.cafe-hours, &.contact {
+      vertical-align: top;
+    }
+
+  }
+
+  @media screen and (max-width: 835px) {
+    padding: 50px 0;
+
+    .map-contain {
+      margin-bottom: 50px;
+    }
+
+    .footer-block {
+      display: block;
+      margin-bottom: 50px;
+      padding: 0 !important;
+      width: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .tiz-map {
+      padding: 0 20%;
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+

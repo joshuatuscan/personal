@@ -1,0 +1,262 @@
+
+.journal {
+  background: $white url('/assets/marble-about.png') repeat-y center center;
+  background-size: 100% auto;
+
+  .pagination {
+    padding: 50px 0;
+
+    .navthing:nth-child(2) {
+      padding-left: 10px;
+
+      &:before {
+        color: $gold;
+        content: '♨';
+        padding-right: 10px;
+      }
+    }
+
+    a {
+      @include font-size(1.5);
+      @include transition(all 0.2s ease-in-out);
+      color: #c39d4a;
+      font-family: $apercu;
+
+      &:hover {
+        color: $slate;
+      }
+    }
+
+    .newer {
+      display: inline-block;
+
+      span {
+
+        &:before {
+          @include font-size(1.8);
+          content: '↚ ';
+        }
+      }
+    }
+
+    .older {
+      display: inline-block;
+
+      span {
+        &:after {
+          @include font-size(1.8);
+          content: ' ↛';
+        }
+      }
+    }
+  }
+
+  .blog-list {
+    @include clearfix;
+    
+  }
+
+  .blog-item {
+    @include clearfix;
+    padding: 50px 0;
+  }
+
+  .blog-content {
+    float: left;
+    width: 60%;
+
+    .entry {
+      margin-bottom: 60px;
+      padding-bottom: 50px;
+      position: relative;
+
+      &:after {
+        background-color: $gold;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100px;
+      }
+
+      .entry-header {
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        @include font-size(4.8);
+        font-family: $utopia-display;
+        letter-spacing: 2px;
+        margin-top: 14px;
+
+        a {
+          color: $slate;
+
+          &:hover {
+            color: $gold;
+          }
+        }
+      }
+
+      .entry-header-date, .entry-header-author {
+        a {
+          @include font-size(1.2);
+          color: $slate;
+          font-family: $gotham;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $gold;
+          }
+        }
+      }
+
+      .entry-header-comments {
+        @include font-size(1.5);
+        color: $gold;
+        font-family: $apercu;
+        position: relative;
+
+        &:hover {
+          color: $slate;
+        }
+      }
+
+      .entry-header-date {
+        position: relative;
+      }
+
+      .entry-header-author {
+        padding: 0 10px;
+      }
+
+
+      p {
+        @include font-size(1.8);
+        font-family: $apercu;
+        line-height: 165%;
+        margin: 20px 0;
+      }
+
+      .image-block {
+        margin: 0;
+        padding: 0;
+      }
+
+      .image-caption-wrapper {
+        p {
+          @include font-size(1.4);
+          color: rgba($slate, .7);
+          font-family: $apercu;
+        }
+        
+      }
+    }
+  }
+
+  .blog-sidebar {
+    float: left;
+    padding-left: 12%;
+    width: 40%;
+
+    .newsletter-form-wrapper {
+      // background: rgba($gold, .2);
+      // padding: 30px;
+      background: transparent;
+      padding: 0;
+
+      .newsletter-form {
+        text-align: left;
+      }
+
+      .newsletter-form-field-element {
+        @include font-size(1.4);
+        background: transparent;
+        border: 2px solid $gold;
+        font-family: $apercu;
+        width: 100%;
+      }
+
+      .newsletter-form-field-wrapper {
+        min-width: none !important;
+        width: 100%;
+      }
+    }
+
+    .newsletter-form-button {
+      @extend .cta;
+      border: none !important;
+    }
+
+    .newsletter-form-header {
+      text-align: left;
+      width: 100%;
+    }
+
+    .newsletter-form-header-title {
+      font-size: 12px !important;
+      color: $slate;
+      font-family: $gotham;
+      letter-spacing: 2px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .newsletter-form-header-description {
+      text-align: left;
+
+      p {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+
+    .html-block {
+      h1 {
+        @include font-size(1.8);
+        font-family: $gotham;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        @include font-size(1.5);
+        line-height: 150%;
+        margin: 15px 0;
+      }
+    }
+
+    .horizontal-rule-block {
+      hr {
+        background: $slate;
+        border: none;
+        height: 1px;
+        opacity: .2;
+      }
+    }
+
+    .newsletter-block .newsletter-form-footnote p {
+      @include font-size(1.2);
+      color: $slate;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    .blog-content {
+      float: none;
+      width: 100%;
+    }
+
+    .blog-sidebar {
+      float: none;
+      margin-top: 50px;
+      padding: 0;
+      width: 100%;
+    }
+  }
+  
+}
+
