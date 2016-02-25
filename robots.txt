@@ -1,4 +1,6 @@
-# robotstxt.org/
+# Don't allow web crawlers to index Craft
+User-agent: *
+Disallow: ../craft/
 
-User-agent: * 
-Disallow:
+User-agent: *
+Disallow: index.php
