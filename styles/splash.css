@@ -42,9 +42,9 @@ body {
 
 h1 {
 	font-size: 40px;
-	font-size: 3.3vw;
+	font-size: 3.1vw;
 	height: auto;
-	line-height: 145%;
+	line-height: 1.4;
 	left: 50%;
 	letter-spacing: 1.5px;
 	position: absolute;
