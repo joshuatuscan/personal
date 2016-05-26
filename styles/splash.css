@@ -73,6 +73,9 @@ a {
 .yellow {
 	color: #FFD91A;
 }
+.green {
+	color: #42D813;
+}
 
 a:hover {
 	/*color: red;*/
