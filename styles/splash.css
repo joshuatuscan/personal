@@ -33,7 +33,7 @@ legend {color: #000;}
 
 
 body {
-	background: #111;
+	background: #151526;
 	color: #f5f4eb;
 	font-family: 'Abril Fatface', cursive;
 	height: 100%;
@@ -55,53 +55,28 @@ h1 {
 }
 
 a {
-	color: #f5f4eb;
-	transition: all 0.2s ease-in-out;
+	color: #00BDEF;
+	transition: color 1.5s ease-in-out;
 	text-decoration: none;
-}
-
-/*a:visited {
-	color: black;
-}*/
-
-a:hover {
-	color: purple;
-}
-
-.red:hover, .red:visited {
-	color: red;
-}
-
-.purple:hover, .purple:visited {
-	color: purple;
-}
-
-.orange:hover, .orange:visited {
-	color: orange;
-}
-
-.green:hover, .green:visited {
-	color: green;
-}
-
-.blue:hover, .blue:visited {
-	color: blue;
-}
-
-.fushchia:hover, .fushchia:visited {
-	color: fuchsia ;
-}
-
-.yellow:hover, .yellow:visited {
-	color: yellow;
-}
-
-.navy:hover, .navy:visited, .clicked {
-	color: mediumslateblue;
 }
 
 .evolve {
 	cursor: pointer;
+}
+
+.pink {
+	color: #FF55CD;
+}
+.blue {
+	color: #00BDEF;
+}
+.yellow {
+	color: #FFD91A;
+}
+
+a:hover {
+	/*color: red;*/
+	border-bottom: 2px solid white;
 }
 
 @media screen and (max-width: 900px) {
