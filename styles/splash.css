@@ -41,12 +41,12 @@ body {
 }
 
 h1 {
-	font-size: 40px;
-	font-size: 2.8vw;
+	font-size: 26px;
+	font-size: 2vw;
 	height: auto;
-	line-height: 1.4;
+	line-height: 1.5;
 	left: 50%;
-	letter-spacing: 1.5px;
+	letter-spacing: 1.8px;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) translateX(-50%);
@@ -84,17 +84,18 @@ a:hover {
 
 @media screen and (max-width: 900px) {
 	h1 {
-		font-size: 32px;
+		font-size: 20px;
+		font-size: 2.7vw;
 		width: 70%;
 	}
 }
 
 @media screen and (max-width: 666px) {
 	h1 {
-		font-size: 25px;
-		font-size: 8vw;
+		font-size: 20px;
+		font-size: 5.5vw;
 		left: auto;
-		padding: 5%;
+		padding: 7% 8%;
 		position: relative;
 		top: auto;
 		transform: translateY(0%) translateX(0%);
